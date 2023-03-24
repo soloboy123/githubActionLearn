@@ -11,3 +11,11 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      
+      - name: Setup Java JDK
+      - uses: actions/setup-java@v3.10.0
+        with:
+          java-version: '8'
+          
+      
+          
